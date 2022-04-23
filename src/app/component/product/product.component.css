@@ -16,7 +16,25 @@
     margin: 0px 30px;
     text-align: center;
 }
+.item img:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
 .item a:hover{
     color: blue;
     cursor: pointer;
+}
+.card{
+    padding: 20px;
+    margin: 50px;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+}
+.card img:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
 }

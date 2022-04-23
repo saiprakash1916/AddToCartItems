@@ -1,10 +1,10 @@
 <header>
     <div class="navbar bg-primary shadow-sm">
         <div class="navbar-brand align-item-center d-flex">
-            <i class="logo">Flipkart</i>
+            <strong routerLink="product" class="logo"><i><a href="" style="color: white;">FlipKart</a></i></strong>
             <a href=""><i class="explore">Explore <span style="color: yellow;">Plus</span></i></a>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search for products, brands and more">
+                <input type="text" class="form-control" [(ngModel)]= "searchTerm" (keyup)="search($event)" placeholder="Search for products, brands and more">
             </div>
             <span><i class="fa-solid fa-magnifying-glass search-icon"></i></span>
             <div>
@@ -16,11 +16,10 @@
                 <i class="fa-solid fa-chevron-down" style="margin-left: 10px;"></i>
             </div>
             <div class="cart">
-                <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping" style="color: white;"></i>&nbsp;
+                <button routerLink="cart" class="btn btn-primary"><i class="fa-solid fa-cart-shopping" style="color: white;"></i>&nbsp;
                     <strong style="color: white;">Cart</strong>
-                    <div style="font-size: 10px; margin-left: -65px;" class="badge bg-danger">5</div>
+                    <div style="font-size: 10px; margin-left: -65px;" class="badge bg-danger">{{totalItem}}</div>
                 </button>
-
             </div>
         </div>
     </div>

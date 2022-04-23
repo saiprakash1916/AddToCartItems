@@ -3,7 +3,11 @@
     font-weight: bolder;
     color: white;
     margin-left: 250px;
-    margin-top: -10px
+    margin-top: -10px;
+    cursor: pointer;
+}
+.logo a{
+    text-decoration: none;
 }
 a{
     margin-top: 20px;
